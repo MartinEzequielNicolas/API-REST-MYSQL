@@ -4,9 +4,9 @@ import { deleteEmployees, getEmployees, postEmployees, putEmployees,getEmployee 
 const router = Router()
 
 router.get('/employees',getEmployees);
-router.get('/employee/:id',getEmployee);
+router.get('/employees/:id',getEmployee);
 router.post('/employees',postEmployees);
-router.delete('/employees',deleteEmployees);
-router.put('/employees',putEmployees);
+router.delete('/employees/:id',deleteEmployees);
+router.put('/employees/:id',putEmployees);
 
 export default router 
